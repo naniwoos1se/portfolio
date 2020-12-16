@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/aos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+  </head>
+  <body>
+
+    <header>
+      <nav>
+        <div class="logo">
+          <img src="img/01_logo.png" alt="an insightful designer">
+        </div>
+        <div class="menu">
+
+          <ul>
+            <li><a href="sub_01.html">Ad</a></li>
+            <li><a href="sub_02.html">Editorial</a></li>
+            <li><a href="sub_03.html">Identity</a></li>
+            <li><a href="sub_04.html">Package</a></li>
+            <li><a href="sub_05.html">UI / UX</a></li>
+          </ul>
+
+
+
+
+
+        </div>
+      </nav>
+    </header>
+
+    <section>
+      <!--키비주얼 부문-->
+      <div class="keyvisual">
+        <div class="keyvisual_wrap">
+          <div class="keyvisual_title" data-aos="flip-left" data-aos-duration="1500">
+            <img src="img/03_keyvisual_tit.png" alt="보다 나은 디자이너 이나은 입니다.">
+          </div>
+        </div>
+      </div>
+
+      <!--프로필 부문-->
+      <div class="profile">
+        <div class="profile_wrap">
+          <div class="profile_01" data-aos="fade-up" data-aos-duration="1500"><img src="img/04_01_txt.png" alt="이름/연락처"></div>
+          <div class="profile_02" data-aos="fade-up" data-aos-duration="1500"><img src="img/04_02_txt.png" alt="Certificate"></div>
+          <div class="profile_03" data-aos="fade-up" data-aos-duration="1500"><img src="img/04_03_txt.png" alt="skill"></div>
+          <div class="profile_04" data-aos="fade-up" data-aos-duration="1500"><img src="img/04_04_txt.png" alt="award"></div>
+          <div class="profile_04" data-aos="fade-up" data-aos-duration="1500"><img src="img/04_05_txt.png" alt="education"></div>
+        </div>
+      </div>
+
+
+      <!--포트폴리오 1-->
+      <div class="pf_1" id="anchor1">
+        <div class="pf_wrap">
+          <div class="pf_tit_1"><img src="img/pf_tit_1.png" alt="Ad"></div>
+          <div class="pf_img_1" data-aos="zoom-in" data-aos-duration="1500"><img src="img/pf_img_1.png" alt="Ad 목업"></div>
+          <div class="pf_txt_1"><img src="img/pf_txt_1.png" alt="Ad 설명"></div>
+        </div>
+      </div>
+
+      <!--포트폴리오 2-->
+      <div class="pf_2" id="anchor2">
+        <div class="pf_wrap">
+          <div class="pf_tit_2"><img src="img/pf_tit_2.png" alt="Editorial"></div>
+          <div class="pf_img_2" data-aos="zoom-in" data-aos-duration="1500"><img src="img/pf_img_2.png" alt="Editorial 목업"></div>
+          <div class="pf_txt_2"><img src="img/pf_txt_2.png" alt="Editorial 설명"></div>
+        </div>
+      </div>
+
+      <!--포트폴리오 3-->
+      <div class="pf_3" id="anchor3">
+        <div class="pf_wrap">
+          <div class="pf_tit_3"><img src="img/pf_tit_3.png" alt="Identity"></div>
+          <div class="pf_img_3" data-aos="zoom-in" data-aos-duration="1500"><img src="img/pf_img_3.png" alt="Identity 목업"></div>
+          <div class="pf_txt_3"><img src="img/pf_txt_3.png" alt="Identity설명"></div>
+        </div>
+      </div>
+
+      <!--포트폴리오 4-->
+      <div class="pf_4" id="anchor4">
+        <div class="pf_wrap">
+          <div class="pf_tit_4"><img src="img/pf_tit_4.png" alt="Package"></div>
+          <div class="pf_img_4" data-aos="zoom-in" data-aos-duration="1500"><img src="img/pf_img_4.png" alt="Package 목업"></div>
+          <div class="pf_txt_4"><img src="img/pf_txt_4.png" alt="Package 설명"></div>
+        </div>
+      </div>
+
+      <!--포트폴리오 5-->
+      <div class="pf_5" id="anchor5">
+        <div class="pf_wrap">
+          <div class="pf_tit_5"><img src="img/pf_tit_5.png" alt="UI/UX"></div>
+          <div class="pf_img_5" data-aos="zoom-in" data-aos-duration="1500"><img src="img/pf_img_5.png" alt="UI/UX 목업"></div>
+          <div class="pf_txt_5"><img src="img/pf_txt_5.png" alt="UI/UX 설명"></div>
+        </div>
+      </div>
+
+    </section>
+
+    <!--푸터 부문-->
+    <footer>
+      <div class="footer_wrap">
+        <span class="footer_logo"><img src="img/06_footer_logo.png" alt="footer"></span>
+        <span class="footer_txt">Copyright 2020 Jongmin Lee. All right reserved.<br>e-Mail : aprilteusday@naver.com</span>
+      </div>
+    </footer>
+
+    <!--스크롤 스크립트-->
+    <script type="text/javascript" src="js/jquery-latest.js"></script>
+    <script>
+      function fnMove(seq){
+        var offset = $("#anchor" + seq).offset();
+        $('html,body').animate({scrollTop : offset.top}, 1200);
+      }
+    </script>
+
+    <!--AOS 스크립트-->
+    <script type="text/javascript" src="js/aos.js"></script>
+    <script>
+      AOS.init({
+        easing: 'ease-in-out-sine'
+      });
+    </script>
+
+  </body>
+</html>
